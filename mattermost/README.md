@@ -17,6 +17,8 @@
 | [10-team-flow.md](10-team-flow.md) | 團隊（Team）操作流程 |
 | [11-websocket-events-catalog.md](11-websocket-events-catalog.md) | 所有 WebSocket 事件目錄（含 JSON 資料格式） |
 | [12-member-list-visibility.md](12-member-list-visibility.md) | Team / Channel 成員清單顯示規則 |
+| [13-rbac-permission-system.md](13-rbac-permission-system.md) | RBAC 權限系統（角色、Scheme、調節權限、三層 Cascading） |
+| [enterprise-im-research-roadmap.md](enterprise-im-research-roadmap.md) | 企業 IM 研究待辦清單（各面向研究方向與進度追蹤） |
 
 ## 程式碼庫結構
 

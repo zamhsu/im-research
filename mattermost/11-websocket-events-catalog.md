@@ -1445,89 +1445,89 @@ Priority 訊息的持續通知。
 
 ## 附錄：事件常數對照表
 
-| 常數名稱 | 事件字串值 | 廣播範圍 |
-|--------|-----------|---------|
-| `WebsocketEventHello` | `hello` | user |
-| `WebsocketEventPosted` | `posted` | channel |
-| `WebsocketEventPostEdited` | `post_edited` | channel |
-| `WebsocketEventPostDeleted` | `post_deleted` | channel |
-| `WebsocketEventEphemeralMessage` | `ephemeral_message` | user |
-| `WebsocketEventPostUnread` | `post_unread` | user |
-| `WebsocketEventPostRevealed` | `post_revealed` | user |
-| `WebsocketEventPostBurned` | `post_burned` | user |
-| `WebsocketEventBurnOnReadAllRevealed` | `burn_on_read_all_revealed` | user |
-| `WebsocketEventAcknowledgementAdded` | `post_acknowledgement_added` | channel |
-| `WebsocketEventAcknowledgementRemoved` | `post_acknowledgement_removed` | channel |
-| `WebsocketEventThreadUpdated` | `thread_updated` | user |
-| `WebsocketEventThreadFollowChanged` | `thread_follow_changed` | user |
-| `WebsocketEventThreadReadChanged` | `thread_read_changed` | user |
-| `WebsocketEventReactionAdded` | `reaction_added` | channel |
-| `WebsocketEventReactionRemoved` | `reaction_removed` | channel |
-| `WebsocketEventChannelCreated` | `channel_created` | user |
-| `WebsocketEventChannelUpdated` | `channel_updated` | channel |
-| `WebsocketEventChannelDeleted` | `channel_deleted` | team/channel |
-| `WebsocketEventChannelRestored` | `channel_restored` | team/channel |
-| `WebsocketEventChannelConverted` | `channel_converted` | team |
-| `WebsocketEventChannelSchemeUpdated` | `channel_scheme_updated` | channel |
-| `WebsocketEventUserAdded` | `user_added` | channel |
-| `WebsocketEventUserRemoved` | `user_removed` | channel + user |
-| `WebsocketEventChannelMemberUpdated` | `channel_member_updated` | user |
-| `WebsocketEventDirectAdded` | `direct_added` | channel |
-| `WebsocketEventGroupAdded` | `group_added` | channel |
-| `WebsocketEventMultipleChannelsViewed` | `multiple_channels_viewed` | user |
-| `WebsocketEventChannelBookmarkCreated` | `channel_bookmark_created` | channel |
-| `WebsocketEventChannelBookmarkUpdated` | `channel_bookmark_updated` | channel |
-| `WebsocketEventChannelBookmarkDeleted` | `channel_bookmark_deleted` | channel |
-| `WebsocketEventChannelBookmarkSorted` | `channel_bookmark_sorted` | channel |
-| `WebsocketEventChannelJoinRequestCreated` | `channel_join_request_created` | channel |
-| `WebsocketEventChannelJoinRequestUpdated` | `channel_join_request_updated` | user |
-| `WebsocketEventSidebarCategoryCreated` | `sidebar_category_created` | user |
-| `WebsocketEventSidebarCategoryUpdated` | `sidebar_category_updated` | user |
-| `WebsocketEventSidebarCategoryDeleted` | `sidebar_category_deleted` | user |
-| `WebsocketEventSidebarCategoryOrderUpdated` | `sidebar_category_order_updated` | user |
-| `WebsocketEventAddedToTeam` | `added_to_team` | user |
-| `WebsocketEventLeaveTeam` | `leave_team` | team (omit user) |
-| `WebsocketEventUpdateTeam` | `update_team` | team |
-| `WebsocketEventDeleteTeam` | `delete_team` | team |
-| `WebsocketEventRestoreTeam` | `restore_team` | team |
-| `WebsocketEventUpdateTeamScheme` | `update_team_scheme` | team |
-| `WebsocketEventMemberroleUpdated` | `memberrole_updated` | user |
-| `WebsocketEventNewUser` | `new_user` | global |
-| `WebsocketEventUserUpdated` | `user_updated` | global |
-| `WebsocketEventUserRoleUpdated` | `user_role_updated` | user |
-| `WebsocketEventUserActivationStatusChange` | `user_activation_status_change` | global |
-| `WebsocketEventGuestsDeactivated` | `guests_deactivated` | global |
-| `WebsocketEventTyping` | `typing` | channel (omit user) |
-| `WebsocketEventStatusChange` | `status_change` | user |
-| `WebsocketEventPreferencesChanged` | `preferences_changed` | user |
-| `WebsocketEventPreferencesDeleted` | `preferences_deleted` | user |
-| `WebsocketEventPersistentNotificationTriggered` | `persistent_notification_triggered` | user |
-| `WebsocketEventDraftCreated` | `draft_created` | user |
-| `WebsocketEventDraftUpdated` | `draft_updated` | user |
-| `WebsocketEventDraftDeleted` | `draft_deleted` | user |
-| `WebsocketScheduledPostCreated` | `scheduled_post_created` | user |
-| `WebsocketScheduledPostUpdated` | `scheduled_post_updated` | user |
-| `WebsocketScheduledPostDeleted` | `scheduled_post_deleted` | user |
-| `WebsocketEventEmojiAdded` | `emoji_added` | global |
-| `WebsocketEventRoleUpdated` | `role_updated` | global |
-| `WebsocketEventConfigChanged` | `config_changed` | global |
-| `WebsocketEventLicenseChanged` | `license_changed` | global |
-| `WebsocketEventPluginEnabled` | `plugin_enabled` | global |
-| `WebsocketEventPluginDisabled` | `plugin_disabled` | global |
-| `WebsocketEventPluginStatusesChanged` | `plugin_statuses_changed` | global |
-| `WebsocketEventOpenDialog` | `open_dialog` | user |
-| `WebsocketEventShowToast` | `show_toast` | user |
-| `WebsocketEventReceivedGroup` | `received_group` | global |
-| `WebsocketEventReceivedGroupAssociatedToTeam` | `received_group_associated_to_team` | team |
-| `WebsocketEventReceivedGroupNotAssociatedToTeam` | `received_group_not_associated_to_team` | team |
-| `WebsocketEventReceivedGroupAssociatedToChannel` | `received_group_associated_to_channel` | channel |
-| `WebsocketEventReceivedGroupNotAssociatedToChannel` | `received_group_not_associated_to_channel` | channel |
-| `WebsocketEventGroupMemberAdd` | `group_member_add` | user |
-| `WebsocketEventGroupMemberDelete` | `group_member_deleted` | user |
-| `WebsocketEventCPAFieldCreated` | `custom_profile_attributes_field_created` | global |
-| `WebsocketEventCPAFieldUpdated` | `custom_profile_attributes_field_updated` | global |
-| `WebsocketEventCPAFieldDeleted` | `custom_profile_attributes_field_deleted` | global |
-| `WebsocketEventCPAValuesUpdated` | `custom_profile_attributes_values_updated` | user |
-| `WebsocketEventCloudSubscriptionChanged` | `cloud_subscription_changed` | global |
-| `WebsocketEventRecapUpdated` | `recap_updated` | user |
-| `WebsocketEventFileUploadRejected` | `file_upload_rejected` | user |
+| 常數名稱 | 事件字串值 | 廣播範圍 | 觸發時機 |
+|--------|-----------|---------|---------|
+| `WebsocketEventHello` | `hello` | user | 客戶端建立 WebSocket 連線後，Server 握手回應 |
+| `WebsocketEventPosted` | `posted` | channel | 新訊息建立（`POST /posts`）時 |
+| `WebsocketEventPostEdited` | `post_edited` | channel | 訊息內容被修改，或釘選/取消釘選時 |
+| `WebsocketEventPostDeleted` | `post_deleted` | channel | 訊息被刪除（軟刪除，`delete_at` 設值）時 |
+| `WebsocketEventEphemeralMessage` | `ephemeral_message` | user | 系統或插件發送不存 DB 的臨時訊息給特定使用者時 |
+| `WebsocketEventPostUnread` | `post_unread` | user | 使用者手動將頻道標記為未讀時 |
+| `WebsocketEventPostRevealed` | `post_revealed` | user | Burn-on-read 訊息被收件人首次閱覽時 |
+| `WebsocketEventPostBurned` | `post_burned` | user | Burn-on-read 訊息超過有效期自動銷毀時 |
+| `WebsocketEventBurnOnReadAllRevealed` | `burn_on_read_all_revealed` | user | 所有收件人皆已閱覽 burn-on-read 訊息時 |
+| `WebsocketEventAcknowledgementAdded` | `post_acknowledgement_added` | channel | 使用者對 Priority 訊息按下確認（Acknowledge）時 |
+| `WebsocketEventAcknowledgementRemoved` | `post_acknowledgement_removed` | channel | 使用者移除對訊息的確認時 |
+| `WebsocketEventThreadUpdated` | `thread_updated` | user | Thread 有新回覆，或回覆被編輯/刪除時 |
+| `WebsocketEventThreadFollowChanged` | `thread_follow_changed` | user | 使用者追蹤或取消追蹤 Thread 時 |
+| `WebsocketEventThreadReadChanged` | `thread_read_changed` | user | 使用者標記 Thread 已讀（更新 `last_viewed_at`）時 |
+| `WebsocketEventReactionAdded` | `reaction_added` | channel | 使用者對訊息新增 emoji reaction 時 |
+| `WebsocketEventReactionRemoved` | `reaction_removed` | channel | 使用者移除訊息的 emoji reaction 時 |
+| `WebsocketEventChannelCreated` | `channel_created` | user | 公開或私人頻道建立時（通知建立者） |
+| `WebsocketEventChannelUpdated` | `channel_updated` | channel | 頻道名稱、header 或 purpose 更新時 |
+| `WebsocketEventChannelDeleted` | `channel_deleted` | team/channel | 頻道被封存（軟刪除）時 |
+| `WebsocketEventChannelRestored` | `channel_restored` | team/channel | 已封存頻道被還原時 |
+| `WebsocketEventChannelConverted` | `channel_converted` | team | 頻道隱私從公開切換為私人（或反向）時 |
+| `WebsocketEventChannelSchemeUpdated` | `channel_scheme_updated` | channel | 頻道套用的 Permission Scheme 變更時 |
+| `WebsocketEventUserAdded` | `user_added` | channel | 使用者被加入頻道時 |
+| `WebsocketEventUserRemoved` | `user_removed` | channel + user | 使用者自行離開或被移出頻道時（雙重廣播） |
+| `WebsocketEventChannelMemberUpdated` | `channel_member_updated` | user | 頻道成員角色或通知偏好設定更新時 |
+| `WebsocketEventDirectAdded` | `direct_added` | channel | 兩人之間首次建立 DM 頻道時 |
+| `WebsocketEventGroupAdded` | `group_added` | channel | 新的 Group DM（多人私聊）頻道建立時 |
+| `WebsocketEventMultipleChannelsViewed` | `multiple_channels_viewed` | user | 使用者批次更新多個頻道的已讀時間戳時 |
+| `WebsocketEventChannelBookmarkCreated` | `channel_bookmark_created` | channel | 頻道書籤新增時 |
+| `WebsocketEventChannelBookmarkUpdated` | `channel_bookmark_updated` | channel | 頻道書籤內容更新時 |
+| `WebsocketEventChannelBookmarkDeleted` | `channel_bookmark_deleted` | channel | 頻道書籤刪除時 |
+| `WebsocketEventChannelBookmarkSorted` | `channel_bookmark_sorted` | channel | 頻道書籤拖曳重新排序時 |
+| `WebsocketEventChannelJoinRequestCreated` | `channel_join_request_created` | channel | 使用者申請加入受限或私人頻道時 |
+| `WebsocketEventChannelJoinRequestUpdated` | `channel_join_request_updated` | user | 加入申請被核准或拒絕時（通知申請者） |
+| `WebsocketEventSidebarCategoryCreated` | `sidebar_category_created` | user | 使用者建立 Sidebar 自訂分類時 |
+| `WebsocketEventSidebarCategoryUpdated` | `sidebar_category_updated` | user | Sidebar 分類名稱、靜音/收合狀態或所含頻道更新時 |
+| `WebsocketEventSidebarCategoryDeleted` | `sidebar_category_deleted` | user | Sidebar 自訂分類刪除時 |
+| `WebsocketEventSidebarCategoryOrderUpdated` | `sidebar_category_order_updated` | user | Sidebar 分類拖曳重新排列順序時 |
+| `WebsocketEventAddedToTeam` | `added_to_team` | user | 使用者被加入團隊時（通知被加入者） |
+| `WebsocketEventLeaveTeam` | `leave_team` | team (omit user) | 使用者自行離開或被移出團隊時（廣播給其他成員） |
+| `WebsocketEventUpdateTeam` | `update_team` | team | 團隊名稱、描述或設定更新時 |
+| `WebsocketEventDeleteTeam` | `delete_team` | team | 團隊被刪除（軟刪除）時 |
+| `WebsocketEventRestoreTeam` | `restore_team` | team | 已刪除團隊被還原時 |
+| `WebsocketEventUpdateTeamScheme` | `update_team_scheme` | team | 團隊套用的 Permission Scheme 變更時 |
+| `WebsocketEventMemberroleUpdated` | `memberrole_updated` | user | 使用者在團隊中的角色（如升為 team_admin）變更時 |
+| `WebsocketEventNewUser` | `new_user` | global | 新使用者帳號在系統中建立時 |
+| `WebsocketEventUserUpdated` | `user_updated` | global | 使用者個人資料更新時（名稱、頭像、職稱等） |
+| `WebsocketEventUserRoleUpdated` | `user_role_updated` | user | 使用者系統角色變更時（如升為 system_admin） |
+| `WebsocketEventUserActivationStatusChange` | `user_activation_status_change` | global | 使用者帳號被啟用或停用時 |
+| `WebsocketEventGuestsDeactivated` | `guests_deactivated` | global | 系統全體訪客帳號被批次停用時 |
+| `WebsocketEventTyping` | `typing` | channel (omit user) | 使用者在頻道輸入框開始輸入文字時（節流發送） |
+| `WebsocketEventStatusChange` | `status_change` | user | 使用者在線狀態切換時（online/away/offline/dnd） |
+| `WebsocketEventPreferencesChanged` | `preferences_changed` | user | 使用者更新個人偏好設定時 |
+| `WebsocketEventPreferencesDeleted` | `preferences_deleted` | user | 使用者刪除個人偏好設定項目時 |
+| `WebsocketEventPersistentNotificationTriggered` | `persistent_notification_triggered` | user | Priority 訊息重複通知排程觸發時 |
+| `WebsocketEventDraftCreated` | `draft_created` | user | 使用者建立新草稿時（跨裝置同步） |
+| `WebsocketEventDraftUpdated` | `draft_updated` | user | 使用者更新草稿內容時 |
+| `WebsocketEventDraftDeleted` | `draft_deleted` | user | 草稿被刪除（含訊息發送後自動清除）時 |
+| `WebsocketScheduledPostCreated` | `scheduled_post_created` | user | 使用者建立排程訊息時 |
+| `WebsocketScheduledPostUpdated` | `scheduled_post_updated` | user | 排程訊息的內容或排程時間被修改時 |
+| `WebsocketScheduledPostDeleted` | `scheduled_post_deleted` | user | 排程訊息被取消，或到期執行後自動移除時 |
+| `WebsocketEventEmojiAdded` | `emoji_added` | global | 管理員或使用者新增自訂 Emoji 時 |
+| `WebsocketEventRoleUpdated` | `role_updated` | global | 系統角色的權限清單被管理員修改時 |
+| `WebsocketEventConfigChanged` | `config_changed` | global | 管理員在後台修改系統設定後儲存時 |
+| `WebsocketEventLicenseChanged` | `license_changed` | global | 系統授權憑證更換或移除時 |
+| `WebsocketEventPluginEnabled` | `plugin_enabled` | global | 插件被管理員啟用時 |
+| `WebsocketEventPluginDisabled` | `plugin_disabled` | global | 插件被管理員停用時 |
+| `WebsocketEventPluginStatusesChanged` | `plugin_statuses_changed` | global | 插件狀態批次變更（如伺服器重啟後重新掃描）時 |
+| `WebsocketEventOpenDialog` | `open_dialog` | user | 斜線指令或互動按鈕觸發 Interactive Dialog 開啟時 |
+| `WebsocketEventShowToast` | `show_toast` | user | 系統或插件推送 Toast 通知給特定使用者時 |
+| `WebsocketEventReceivedGroup` | `received_group` | global | LDAP 群組同步後新增或更新群組資訊時 |
+| `WebsocketEventReceivedGroupAssociatedToTeam` | `received_group_associated_to_team` | team | LDAP 群組與團隊建立綁定關係時 |
+| `WebsocketEventReceivedGroupNotAssociatedToTeam` | `received_group_not_associated_to_team` | team | LDAP 群組與團隊解除綁定關係時 |
+| `WebsocketEventReceivedGroupAssociatedToChannel` | `received_group_associated_to_channel` | channel | LDAP 群組與頻道建立綁定關係時 |
+| `WebsocketEventReceivedGroupNotAssociatedToChannel` | `received_group_not_associated_to_channel` | channel | LDAP 群組與頻道解除綁定關係時 |
+| `WebsocketEventGroupMemberAdd` | `group_member_add` | user | LDAP 同步後使用者被加入群組時 |
+| `WebsocketEventGroupMemberDelete` | `group_member_deleted` | user | LDAP 同步後使用者被移出群組時 |
+| `WebsocketEventCPAFieldCreated` | `custom_profile_attributes_field_created` | global | 管理員新增自訂個人屬性欄位定義時 |
+| `WebsocketEventCPAFieldUpdated` | `custom_profile_attributes_field_updated` | global | 管理員修改自訂個人屬性欄位定義時 |
+| `WebsocketEventCPAFieldDeleted` | `custom_profile_attributes_field_deleted` | global | 管理員刪除自訂個人屬性欄位定義時 |
+| `WebsocketEventCPAValuesUpdated` | `custom_profile_attributes_values_updated` | user | 使用者儲存自訂個人屬性欄位的值時 |
+| `WebsocketEventCloudSubscriptionChanged` | `cloud_subscription_changed` | global | Cloud 訂閱方案或授權狀態變更時 |
+| `WebsocketEventRecapUpdated` | `recap_updated` | user | AI 頻道摘要（Recap）內容產生或更新完成時 |
+| `WebsocketEventFileUploadRejected` | `file_upload_rejected` | user | 檔案上傳被病毒掃描或大小限制拒絕時 |
